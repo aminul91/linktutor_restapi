@@ -13,3 +13,6 @@ You can see the reporting about the tutorials and topics of this application.
 # REST API Operations
 
 GET operation is public and anyone can access . For POST operation you need username and password. Please Contact sumon2907@gmail.com for credentials  
+
+# Database
+Postgresql Database is used as database for the API
