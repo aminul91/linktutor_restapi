@@ -22,7 +22,7 @@ class HomeView(TemplateView):
         
         domain_language=domain+"language"
         chart2_data = []
-        context["data_list"].append({"tutorial":data_r,"path_url":domain,"path_url_language":domain_language,"Chart_t":chart2_data})
+        context["data_list"].append({"tutorial":data_r,"path_url":domain,"path_url_language":domain_language})
         return context
 
 class TopicView():
