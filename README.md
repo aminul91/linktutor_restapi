@@ -1,14 +1,23 @@
-# tutorsitelink application
+# linktutor RESTful API 
 
-A Django application for tutorials for different topic
+The API is linktutor API
 
-Application contains a RESTful API which is developed by Django REST framework
+The RESTful API is developed with Django Rest framework
+
+The API link is https://linktutor.herokuapp.com/tutorials/
 
 Here you can find most popular tutorial's links about different topics
 
-# Reporting
+A Django application is a client app for tutorials for different topic
 
-You can see the reporting about the tutorials and topics of this application. 
+Application fetch data from a RESTful API which is developed by Django REST framework
+
+
+This a client app developed by Django
+
+The client application URL is https://tutorsitelinks.herokuapp.com/
+
+
 
 # REST API Operations
 
