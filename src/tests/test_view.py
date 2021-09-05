@@ -9,7 +9,6 @@ class TestViews(TestCase):
         self.client = Client()
         self.tutorials_url = reverse('tutorials')
         self.tutorials_insert = reverse('tutorial_insert')
-        self.tutorials_guide = reverse('guide_insert')
     
     def test_link_list_POST(self):
         tutorial1 = tutorial_types.objects.create(
@@ -26,6 +25,7 @@ class TestViews(TestCase):
                                                           'type_value': tutorial1.type_value, 
                                                           'language_value': language1.language_value, 
                                                           'language_type': 'english'})
+        print(response.status_code)
         self.assertEqual(response.status_code,status.HTTP_201_CREATED)
         print("seven")
         
@@ -34,10 +34,7 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code,200)
         print("one")
     
-    def test_guide_list_GET(self):
-        response = self.client.get(self.tutorials_guide)
-        self.assertEqual(response.status_code,200)
-        print("two")
+   
     
     
         
